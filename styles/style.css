@@ -1,0 +1,239 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+/* universal selector */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-family: "Mulish", sans-serif;
+    font-weight: 400;
+}
+
+body{
+    max-width:1440px;
+}
+
+
+
+/* common selector */
+
+
+
+/* Header Area */
+
+/* nav part */
+nav{
+    max-width: 1170px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+.nav-logo> img{
+    width: 48px;
+    height: 56.008px;
+}
+.nav-title{
+    color: #131318;
+    font-family: Mulish;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.nav-title> span{
+    color: #FF5400;
+    font-family: Mulish;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 44px;
+}
+
+#nav-bar{
+    display:none;
+}
+
+.nav-items> a{
+    text-decoration: none;
+    color: #424247;
+    font-size: 18px;
+}
+
+
+/* banner part */
+
+.banner{
+    max-width: 1170px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('../images/banner.png');
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.banner>h1{
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.banner>p{
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; 
+    margin-top: -10px;
+}
+.banner>div{
+    display: flex;
+    padding: 16px;
+    gap: 24px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+}
+#input-field{
+    width: 174px;
+    height: 52px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #FFF;
+    border: 0;
+    color: rgba(19, 19, 24, 0.50);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.banner-form{
+    display: flex;
+    gap: 24px;
+}
+
+.btn-banner{
+    width: 174px;
+    height: 52px;
+    flex-shrink: 0;
+
+    border-radius: 8px;
+    background: #FF5400;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 0;
+
+}
+
+
+
+
+
+
+
+/* Main Area */
+
+
+
+
+/* Footer Area */
+
+
+
+
+
+
+
+
+
+
+
+/* Desktop/Laptop or Big Devices */
+@media screen and (max-width:992px) {
+    /* .nav-items{
+        display: none;
+    } */
+    /* .nav-items> i{
+        visibility: visible;
+    } */
+}
+
+
+
+
+
+
+
+
+/* Mobile or Small Devices */
+@media screen and (max-width:600px) {
+    .nav-items{
+        display: none;
+    }
+    #nav-bar{
+        display:block;
+    }
+    nav{
+        margin: 20px ;
+    }
+
+
+    .banner{
+        margin: 20px;
+        gap: 20px;
+    }
+    .banner>h1{
+        font-size: 40px;
+    }
+    .banner>div{
+        flex-direction: column;
+        gap: 10px;
+        width: 80%;
+    }
+    #input-field{
+        width: 380px;
+    }
+    .banner-form{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .btn-banner{
+        width: 380px;
+    }
+}
