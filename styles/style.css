@@ -160,16 +160,17 @@ nav{
 main{
     max-width: 1170px;
     margin: 50px auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 4%;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* gap: 4%; */
 }
 
 /* Popular-Tours part */
 .Popular-Tours{
     display: flex;
     justify-content: space-between;
+    margin: 50px auto;
 }
 .Popular-Tours-content{
     display: flex;
@@ -192,21 +193,15 @@ main{
     font-size: 16px;
     line-height: 26px; 
     padding-left: 10px;
-
     display: flex;
     flex-direction: column;
     gap: 20px;
-
 }
 .Popular-Tours-content .p2{
     color: #5A5A5D;
-    /* font-family: Mulish; */
     font-size: 16px;
-    /* font-style: normal; */
-    /* font-weight: 400; */
     line-height: 26px; 
 }
-
 .Popular-Tours-image{
     width: 48%;
 }
@@ -215,6 +210,102 @@ main{
 }
 
 
+/* Destination part */
+.Destination{
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+.Destination-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    gap: 20px;
+}
+.Destination-content> h1{
+    color: #131318;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.Destination-content> p{
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.Destination-images{
+    display: grid;
+    grid-template-columns:repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    padding: 10px; 
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+
+}
+.Destination-images img{
+    width: 100%;
+}
+.img-maldives{
+    grid-column:1/span 6 ;
+    grid-row: 1/span 1;
+
+    position: relative;
+}
+
+.img-indonesia{
+    grid-column: 7/span 6;
+    grid-row: 1/span 1;
+
+    position: relative;
+}
+.img-srilanka{
+    grid-column: 1/span 4;
+    grid-row: 2/span 1;
+    position: relative;
+}
+.img-north-america{
+    grid-column: 5/span 5;
+    grid-row: 2/span 1;
+    position: relative;
+}
+.img-kashmir{
+    grid-column: 10/span 3;
+    grid-row: 2/span 1;
+    position: relative;
+}
+.img-bangladesh{
+    grid-column: 1/span 5;
+    grid-row: 3/span 1;
+    position: relative;
+}
+.img-bandarban{
+    grid-column: 6/span 7;
+    grid-row: 3/span 1;
+    position: relative;
+}
+.Maldives, .Indonesia, .Srilanka, .North-America, .Kashmir, .Bangladesh, .Bandarban{
+    color: #FFF;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+    position: absolute;
+    top: 45%;
+    left: 40%;
+}
 
 
 
@@ -320,6 +411,94 @@ main{
     .Popular-Tours-image img{
         width: 100%;
     }
+
+
+
+    .Destination-content> h1{
+        color: #131318;
+        text-align: center;
+        font-family: Mulish;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+
+    .Destination-images{
+        display: grid;
+        /* grid-template-columns:repeat(12, 1fr);
+        grid-template-rows: repeat(3, 1fr); */
+        grid-template-columns:repeat(12, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    
+        padding: 10px; 
+        gap: 10px;
+        width: 100%;
+        align-items: center;
+    
+    }
+    .Destination-images img{
+        width: 100%;
+    }
+    .img-maldives{
+        grid-column:1/span 12 ;
+        grid-row: 1/span 1;
+    
+        position: relative;
+    }
+    
+    .img-indonesia{
+        /* grid-column: 7/span 6;
+        grid-row: 1/span 1; */
+        grid-column:1/span 12 ;
+        grid-row: 2/span 1;
+    
+        position: relative;
+    }
+    .img-srilanka{
+        /* grid-column: 1/span 4;
+        grid-row: 2/span 1; */
+        grid-column:1/span 12 ;
+        grid-row: 3/span 1;
+        position: relative;
+    }
+    .img-north-america{
+        /* grid-column: 5/span 5;
+        grid-row: 2/span 1; */
+        grid-column:1/span 12 ;
+        grid-row: 4/span 1;
+        position: relative;
+    }
+    .img-kashmir{
+        grid-column:1/span 12 ;
+        grid-row: 5/span 1;
+        position: relative;
+    }
+    .img-bangladesh{
+        grid-column:1/span 12 ;
+        grid-row: 6/span 1;
+        position: relative;
+    }
+    .img-bandarban{
+        grid-column:1/span 12 ;
+        grid-row: 7/span 1;
+        position: relative;
+    }
+    .Maldives, .Indonesia, .Srilanka, .North-America, .Kashmir, .Bangladesh, .Bandarban{
+        color: #FFF;
+        text-align: center;
+        font-size: 28px;
+        font-weight: 800;
+        position: absolute;
+        top: 45%;
+        left: 40%;
+    }
+
+
+
+
+
+ 
 
 
 
