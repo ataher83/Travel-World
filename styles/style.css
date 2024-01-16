@@ -538,6 +538,133 @@ main{
 
 
 
+/* South Asia Part - Ext */
+/* South Asia Part - Ext */
+/* South Asia Part - Ext */
+
+.SouthAsia{
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+}
+.SouthAsia-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.SouthAsia-content> h1{
+    color: #131318;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.SouthAsia-content> p{
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; 
+    width: 70%;
+}
+
+/* .SouthAsia-content-cards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 30px;
+}
+.SouthAsia-content-cards h3{
+    color: #131318;
+    font-family: Mulish;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.SouthAsia-content-cards p{
+    color: #5A5A5D;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+/* } */
+/* .SouthAsia-content-card-1{
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05); */
+
+
+    /* width: 550px; */
+    /* width: 45%;
+    height: 250px;
+
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+} */ */
+/* .Choose-Us-card-1> h3{}
+.Choose-Us-card-1> p{}
+.SouthAsia-content-card-2{
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+
+    width: 550px;
+    height: 250px;
+
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 45%;
+} */
+/* .SouthAsia-content-card-3{
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+
+    width: 550px;
+    height: 250px;
+
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 45%;
+} */
+
+.SouthAsia-images{
+    display: flex;
+   
+
+}
+.SouthAsia-image> div{
+    width: 100%;
+}
+.SouthAsia-image> div>img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
 
 
 
