@@ -103,8 +103,9 @@ nav{
     border-radius: 16px;
     background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('../images/banner.png');
     height: 80vh;
-    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center ;
+ 
 
 }
 .banner>h1{
@@ -576,86 +577,100 @@ main{
     width: 70%;
 }
 
-/* .SouthAsia-content-cards{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    width: 100%;
-    gap: 30px;
-}
-.SouthAsia-content-cards h3{
-    color: #131318;
-    font-family: Mulish;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-}
-.SouthAsia-content-cards p{
-    color: #5A5A5D;
-    font-family: Mulish;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 26px; /* 162.5% */
-/* } */
-/* .SouthAsia-content-card-1{
-    border-radius: 16px;
-    border: 1px solid rgba(251, 181, 99, 0.20);
-    background: rgba(251, 181, 99, 0.05); */
-
-
-    /* width: 550px; */
-    /* width: 45%;
-    height: 250px;
-
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-
-} */ */
-/* .Choose-Us-card-1> h3{}
-.Choose-Us-card-1> p{}
-.SouthAsia-content-card-2{
-    border-radius: 16px;
-    border: 1px solid rgba(41, 206, 246, 0.20);
-    background: rgba(41, 206, 246, 0.05);
-
-    width: 550px;
-    height: 250px;
-
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 45%;
-} */
-/* .SouthAsia-content-card-3{
-    border-radius: 16px;
-    border: 1px solid rgba(233, 68, 68, 0.20);
-    background: rgba(233, 68, 68, 0.05);
-
-    width: 550px;
-    height: 250px;
-
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 45%;
-} */
 
 .SouthAsia-images{
-    display: flex;
-   
+    display: grid;
+    grid-template-columns:repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1%;
+    width: 100%;
+}
+.SouthAsia-images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
+.Afghanistan-pkg{
+    grid-column: 1/ span 3;
+    grid-row: 1/ span 1;
+
+ 
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.SouthAsia-image> div{
+.common-pkg{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.common-pkg h3{
+    color: #FFF;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+}
+.common-pkg p{
+    color: #FFF;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+}
+.checked {
+    color: orange;
+}
+.common-pkg button{
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    background: #FF5400;
+    color: #FFF;
+    font-weight: 700;
+    border: 0;
+}
+
+.common-pkg-info{
+    border-radius: 10px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    background-color: rgba(15, 128, 233, 0.247);
+}
+
+.Bangladesh-pkg{
+    grid-column: 4/ span 3;
+    grid-row: 1/ span 1;
+
     width: 100%;
 }
-.SouthAsia-image> div>img{
-    width: 100%;
+.Bhutan-pkg{
+    grid-column: 7/ span 3;
+    grid-row: 1/ span 1;
+}
+.India-pkg{
+    grid-column: 10/ span 3;
+    grid-row: 1/ span 1;
+}
+.Maldives-pkg{
+    grid-column: 1/ span 3;
+    grid-row: 2/ span 1;
+}
+.Nepal-pkg{
+    grid-column: 4/ span 3;
+    grid-row: 2/ span 1;
+}
+.Pakistan-pkg{
+    grid-column: 7/ span 3;
+    grid-row: 2/ span 1;
+}
+.Srilanka-pkg{
+    grid-column: 10/ span 3;
+    grid-row: 2/ span 1;
 }
 
 
@@ -1059,6 +1074,74 @@ footer hr{
         line-height: normal;
     }
 
+
+
+/* South Asia Part - Ext */
+
+
+.SouthAsia-content> h1{
+    font-size: 30px;
+    width: 80%;
+}
+.SouthAsia-content> p{
+    width: 80%;
+    text-align: justify;
+}
+
+
+.SouthAsia-images{
+    display: grid;
+    grid-template-columns:repeat(1, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 1%;
+    width: 100%;
+}
+
+.Afghanistan-pkg{
+    grid-column: 1/ span 1;
+    grid-row: 1/ span 1;
+}
+
+.common-pkg{
+    padding: 0 5%;
+}
+
+
+.Bangladesh-pkg{
+    grid-column: 1/ span 1;
+    grid-row: 2/ span 1;
+}
+.Bhutan-pkg{
+    grid-column: 1/ span 1;
+    grid-row: 3/ span 1;
+}
+.India-pkg{
+    grid-column: 1/ span 1;
+    grid-row: 4/ span 1;
+}
+.Maldives-pkg{
+    grid-column: 1/ span 1;
+    grid-row: 5/ span 1;
+}
+.Nepal-pkg{
+    grid-column: 1/ span 1;
+    grid-row: 6/ span 1;
+}
+.Pakistan-pkg{
+    grid-column: 1/ span 1;
+    grid-row: 7/ span 1;
+}
+.Srilanka-pkg{
+    grid-column: 1/ span 1;
+    grid-row: 8/ span 1;
+}
+
+
+
+
+
+
+    
 
 
 
